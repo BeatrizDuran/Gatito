@@ -1,0 +1,18 @@
+﻿Gatito
+Realizar un programa el cual te permita ingresar un valor ya sea "x" o "y", empezando por las 
+"x", como verificar el ganador.
+
+REQUISITOS
+
+Funcionales:
+RF01: El programa debe de aceptar un caracter ya sea "x" o "y".
+RF02: El programa debe de verificar que las "x" se encuentren vertical, en diagonal.
+RF03: El programa debe de verificar que las "y" se encuentren vertical, en diagonal.
+RF04: El programa debe de validar si existe un ganador o no.
+RF05: El programa debe empezar con el turno de las "x".
+
+
+No Funcionales:
+RNF01: El programa se desarrollará en Consola.
+RNF02: El programa se ejecutará en Visual Studio 2017.
+RNF03: El programa realizará en el lenguaje de C#.

@@ -8,8 +8,8 @@ namespace JueguitoGatito
 {
     public class Tablero
     {
-        public int[,] gato = new int[3,3];
-        public bool turnoX = true;
+        public int[,] gato = new int[3,3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        public bool turno = true;
         Jugador jugador = new Jugador();
        public void FormarTablero()
         {
@@ -23,22 +23,25 @@ namespace JueguitoGatito
             }
         }
 
-        public void turno()
+        //Turno de los jugadores. 'X' siempre empieza.
+        public void TurnoJugador()
         {
-           if( turnoX == true)
+           if( turno == true)
             {
+                Console.WriteLine("-------------------------------");
                 Console.WriteLine("  Turno 1: Cruz");
-                Console.WriteLine(" Posición:");
+                Console.Write(" Posición:");
                 jugador.Cruz();
-                jugador.Imprimir();
-                turnoX = false;
+                jugador.Ganador();
+                turno = false;
             }
-            if (turnoX == false)
-            {
+            else{ 
+                Console.WriteLine("-------------------------------");
                 Console.WriteLine("  Turno 2: Círculo");
-                Console.WriteLine(" Posición:");
+                Console.Write(" Posición:");
                 jugador.Circulo();
-                turnoX = true;
+                jugador.Ganador();
+                turno = true;
             }
         }
     }

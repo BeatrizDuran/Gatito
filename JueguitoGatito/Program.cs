@@ -11,28 +11,24 @@ namespace JueguitoGatito
         static void Main(string[] args)
         {
             double p;
+            bool op = true;
             Tablero tablero = new Tablero();
             Console.WriteLine("------------------ ");
             Console.WriteLine("     GATITO    ");
             Console.WriteLine("------------------ ");
             Console.WriteLine(" ");
-            tablero.turno();
-            Console.WriteLine(" ");
+            Console.WriteLine("Jugadores: ");
+            Console.WriteLine("CRUZ = 11 ");
+            Console.WriteLine("CIRCULO = 0 ");
             tablero.FormarTablero();
-            Console.WriteLine(" ");
-           // p = double.Parse(Console.ReadLine());
-            //tablero.arr1[p] =int.Parse(Console.ReadLine());
-      
-           // tablero.arr1[p]= int.Parse(Console.ReadLine());
-           //if( tablero.arr1[p] == 0)
-           // {
-           //     tablero.Celda1();
-           // }
-
-          
-            
-            Console.ReadKey();
+            do
+            {
+                tablero.TurnoJugador();
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+            } while (op == true);
            
+            Console.ReadKey();
         }
     }
 }

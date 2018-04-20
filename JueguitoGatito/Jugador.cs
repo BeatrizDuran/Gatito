@@ -403,7 +403,7 @@ namespace JueguitoGatito
                 Console.WriteLine("\\ Ganó -CRUZ-");
             }
 
-            //INICIA VALIDACIÓN DEL CIRCULO
+            //INICIA VALIDACIÓN DEL CIRCULO  
             else if (arr[0, 0] == valorO && arr[0, 1] == valorO && arr[0, 2] == valorO)
             {
                 Console.WriteLine("");
